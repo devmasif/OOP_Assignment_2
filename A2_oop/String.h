@@ -11,7 +11,7 @@ public:
     String();                                  // Default constructor
     String(const char* str);                   // Constructor from C-string
     String(const String& other);               // Copy constructor
-    explicit String(int x);                    // Constructor from integer (explicit)
+    String(int x);                             // Constructor from integer
     ~String();                                 // Destructor
 
     char* getdata() const;
@@ -20,12 +20,12 @@ public:
     const char operator[](int i) const;
 
     // Arithmetic Operators
-    String operator+(const String& str) const;
-    String operator+(const char& ch) const;
-    String operator+(const char* str) const;
-    String operator-(const String& substr) const;
-    String operator-(const char& ch) const;
-    String operator-(const char* str) const;
+    String operator+(const String& str) ;
+    String operator+(const char& ch);
+    String operator+(const char* str) ;
+    String operator-(const String& substr) ;
+    String operator-(const char& ch) ;
+    String operator-(const char* str) ;
 
     // Assignment Operators
     String& operator=(const String& str);
@@ -36,7 +36,7 @@ public:
     bool operator==(const char* str) const;
 
     // Unary Operators
-    bool operator!() const;
+    bool operator!() ;
 
     // Function-Call Operators
     int operator()(char ch) const;
@@ -47,8 +47,8 @@ public:
     operator int() const;
 
     // Friends
-    friend std::ostream& operator<<(std::ostream& output, const String& str);
-    friend std::istream& operator>>(std::istream& input, String& str);
+    friend ostream& operator<<(ostream& output, const String& str);
+    friend istream& operator>>(istream& input, String& str);
 };
 
 #endif // STRING_H

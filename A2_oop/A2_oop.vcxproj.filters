@@ -15,15 +15,27 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Source.cpp">
+    <ClCompile Include="Shop.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="String.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="CAList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="String.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Shop.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CAList.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
